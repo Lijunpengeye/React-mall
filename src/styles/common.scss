@@ -1,0 +1,126 @@
+img{
+	display:block;
+}
+header{
+	width:100%;
+	padding:4%;
+	box-sizing:border-box;
+	border-top:1px solid #ebebeb;
+	border-bottom:1px solid #ebebeb;
+	position:fixed;
+	top: 0;
+	left:0;
+	right:0;
+	z-index:100;
+	text-align:center;
+	background:#fff;
+	.previous{
+		font-size:1.4rem;
+		position:absolute;
+		left:4%;
+	}
+	span{
+		font-size:1.2rem;
+	}
+}
+.footer-nav{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-between;
+	padding:2% 4%;
+	box-sizing:border-box;
+	border-top:1px solid #ebebeb;
+	position:fixed;
+	bottom: 0px;
+	left:0px;
+	right:0px;
+	background:#fff;
+
+	.nav-con{
+		width:15%;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		i{
+			font-size:1.4rem;
+		}
+		span{
+			font-size:0.8rem;
+			margin-top:2%;
+		}
+	}
+	.active{
+		color: #f05b1a;
+		i{
+			font-size:1.4rem;
+			color: #f05b1a;
+		}
+		span{
+			font-size:0.8rem;
+			margin-top:2%;
+			color: #f05b1a;
+		}
+	}
+	
+}
+
+
+// 筛选
+.screen{
+	width:100%;
+	position:fixed;
+	left:0px;
+	right:0;
+	top: 2.2rem;
+	z-index:99;
+	.screen-ul{
+		margin-top:1rem;
+		width:100%;
+		display: flex;
+		flex-direction:row;
+		align-items:center;
+		justify-content:space-between;
+		background:#fff;
+		border-bottom:1px solid #ebebeb;
+		.screen-li{
+			width: 23%;
+			padding:3% 0%;
+			display: flex;
+			flex-direction:row;
+			align-items:center;
+			justify-content:center;
+			.sort{
+				width:13px;
+				display: flex;
+				flex-direction:column;
+				align-items:center;
+				justify-content:center;
+				transform:scale(0.8);
+				.shang{
+					transform:rotate(180deg);
+				}
+			}
+		}
+		.icon-jiantou{
+			font-size:0.3rem;
+			color: #dedede;
+		}
+		 .active{
+		 	color: #a54144;
+		 }
+	}
+}
+
+.loading{
+	position:fixed;
+	z-index:999;
+	top: 45%;
+	left:45%;
+	img{
+		width: 30%;
+	}
+}
+
