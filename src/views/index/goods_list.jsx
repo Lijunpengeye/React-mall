@@ -45,6 +45,12 @@ export default class GoodsList extends Component {
                 brandId:this.props.location.state.id,
             }
         }
+
+        if (this.props.location.state.query == 'threeCategory'){
+            query = {
+                threeCategory:this.props.location.state.id,
+            }
+        }
         let title = this.props.location.state.title
         // let newQuery = Object.assign({},query)
         query['pageNum']  = this.state.pageNum

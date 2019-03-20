@@ -1,29 +1,31 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
+
 export default class FooterNav extends Component {
     render(){
         return(
             <nav className="footer-nav">
             {this.props.activeType == 'index' ? 
-            	<div className="nav-con active">
+            	<Link to="/"  className="nav-con active">
             		<i className="iconfont icon-shouyedianpujishishangcheng"></i>
             		<span>首页</span>
-            	</div>
+            	</Link>
             	:
-            	<div className="nav-con">
+            	<Link to="/" className="nav-con">
             		<i className="iconfont icon-shouyedianpujishishangcheng"></i>
             		<span>首页</span>
-            	</div>
+            	</Link>
             }
             {this.props.activeType == 'category' ? 
-            	<div className="nav-con active">
+				<Link to="/category" className="nav-con active">
             		<i className="iconfont icon-icon"></i>
             		<span>分类</span>
-            	</div>
+            	</Link>
             	:
-            	<div className="nav-con ">
+            	<Link to="/category" className="nav-con ">
             		<i className="iconfont icon-icon"></i>
             		<span>分类</span>
-            	</div>
+            	</Link>
             }
             {this.props.activeType == 'shop' ? 
             	<div className="nav-con active">

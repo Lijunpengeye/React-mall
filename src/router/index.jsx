@@ -12,6 +12,7 @@ import NoticeList from '@/views/notice/notice_list';
 import NoticeDetails from '@/views/notice/details';
 import GoodsDetails from '@/views/index/goods_details';
 import me from '@/views/me/me';
+import  category from '@/views/category/category';
 
 const history = createHistory();
 
@@ -29,7 +30,8 @@ const RouteConfig = (
             <Route path="/noticelist"   component={NoticeList} />
             <Route path="/noticedetails/:id"   component={NoticeDetails} />
             <Route path="/details/:id"   component={GoodsDetails} />
-            <Route path="/me" component={me} />                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+            <Route path="/me" component={me} />
+            <Route path="/category" component={category} />
         </div>
     </Router>
 );
